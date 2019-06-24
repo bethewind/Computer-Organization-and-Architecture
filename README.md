@@ -13,3 +13,5 @@
 * [NOR gate](verilog_code/logic_gates/nor/nor.v)
 * [XOR gate](verilog_code/logic_gates/xor/xor_tb.v)
 * [XNOR gate](verilog_code/logic_gates/xnor/xnor_tb.v)
+
+* [Simple circuit](verilog_code/circuit/gate.v) - Simple sircuit realisation in verilog
