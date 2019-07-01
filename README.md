@@ -15,3 +15,7 @@
 * [XNOR gate](verilog_code/logic_gates/xnor/xnor_tb.v)
 
 * [Simple circuit](verilog_code/circuit/gate.v) - Simple sircuit realisation in verilog
+
+## 1-bit Adders
+* [Half Adder](verilog_code/half_adder/adder.v) 
+* [Simple circuit](verilog_code/full_adder/adder.v)
