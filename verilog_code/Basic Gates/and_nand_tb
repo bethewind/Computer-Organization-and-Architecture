@@ -1,0 +1,70 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x557ee3734430 .scope module, "test" "test" 2 1;
+ .timescale 0 0;
+L_0x557ee3754a40 .functor NAND 1, v0x557ee37345b0_0, v0x557ee3754590_0, C4<1>, C4<1>;
+L_0x557ee3754b30 .functor NAND 1, L_0x557ee3754a40, L_0x557ee3754a40, C4<1>, C4<1>;
+L_0x557ee3754c20 .functor NAND 1, L_0x557ee3754b30, v0x557ee3754650_0, C4<1>, C4<1>;
+L_0x557ee3754ce0 .functor NAND 1, L_0x557ee3754c20, L_0x557ee3754c20, C4<1>, C4<1>;
+v0x557ee37345b0_0 .var "a", 0 0;
+v0x557ee3754590_0 .var "b", 0 0;
+v0x557ee3754650_0 .var "c", 0 0;
+v0x557ee37546f0_0 .net "f", 0 0, L_0x557ee3754b30;  1 drivers
+v0x557ee37547b0_0 .net "g", 0 0, L_0x557ee3754c20;  1 drivers
+v0x557ee37548c0_0 .net "q", 0 0, L_0x557ee3754a40;  1 drivers
+v0x557ee3754980_0 .net "w", 0 0, L_0x557ee3754ce0;  1 drivers
+    .scope S_0x557ee3734430;
+T_0 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee37345b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754590_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754590_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee37345b0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754590_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754590_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %delay 10, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x557ee3754650_0, 0, 1;
+    %end;
+    .thread T_0;
+    .scope S_0x557ee3734430;
+T_1 ;
+    %vpi_call 2 29 "$monitor", "a=%d b=%d c=%d w=%d \012", v0x557ee37345b0_0, v0x557ee3754590_0, v0x557ee3754650_0, v0x557ee3754980_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "and_nand_tb.v";
