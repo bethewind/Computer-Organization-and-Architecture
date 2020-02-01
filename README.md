@@ -22,3 +22,4 @@
 
 ## Single Cycle Implementation
 ## Multi Cycle Implementation
+## FlipFlops
