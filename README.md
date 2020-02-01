@@ -19,3 +19,6 @@
 ## 1-bit Adders
 * [Half Adder](verilog_code/half_adder/adder.v) 
 * [Full Adder](verilog_code/full_adder/adder.v)
+
+## Single Cycle Implementation
+## Multi Cycle Implementation
